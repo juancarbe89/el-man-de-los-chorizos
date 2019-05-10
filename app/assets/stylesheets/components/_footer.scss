@@ -1,0 +1,15 @@
+.footer-area {
+  background-color: black;
+  color: white;
+  font-size: .9rem;
+}
+.logo-footer {
+  margin-top: 44px;
+}
+
+@media (min-width: 992px) {
+  .col-lg-2 {
+    flex: 0 0 24.66667%;
+    max-width: 48.66667%;
+  }
+}
