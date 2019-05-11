@@ -1,17 +1,3 @@
-// Specific CSS for your home-page
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-}
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-.navbar-lewagon .navbar-brand img {
-  width: 80px;
-  border-radius: 50%;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  border: gray 1px solid;
-}
 .home-screen {
   padding: 20px 40px;
 }
@@ -38,5 +24,64 @@
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+  }
+}
+
+// .home-click-down {
+//   margin-bottom: 40px;
+//   border-radius: 50%;
+//   width: 100px;
+//   height: 100px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   img {
+//     width: 36%;
+//     height: auto;
+//   }
+// }
+
+.mouse {
+  display: block;
+  width: 28px;
+  height: 48px;
+  border-radius: 11px 11px 15px 15px;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -13px;
+  z-index: 9999;
+}
+.mouse span {
+  display: block;
+  margin: 6px auto;
+  width: 2px;
+  height: 5px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid transparent;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
   }
 }
