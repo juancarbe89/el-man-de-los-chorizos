@@ -1,15 +1,52 @@
 .footer-area {
-  background-color: black;
+  background-color: $blue;
   color: white;
   font-size: .9rem;
+}
+.links {
+  margin: 0px 1px;
+}
+.links>p>a {
+  color: white;
 }
 .logo-footer {
   margin-top: 44px;
 }
+.footer-copyright {
+  background-color: $dark-blue;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+.footer-copyright>a {
+  color: $yellow;
+}
+h6 {
+  margin-top: 30px;
+}
+hr {
+  width: 60px;
+  background-color: white;
+}
 
-@media (min-width: 992px) {
-  .col-lg-2 {
-    flex: 0 0 24.66667%;
-    max-width: 48.66667%;
+@media (min-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 21%;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-5 {
+    flex: 0 0 41.66667%;
+    max-width: 35.66667%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px){
+  .col-sm-6 {
+    max-width: 49%;
+  }
+}
+@media (min-width: 100px) and (max-width: 575px) {
+  .col-12 {
+    text-align: center;
   }
 }
