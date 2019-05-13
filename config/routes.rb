@@ -8,6 +8,10 @@ Rails.application.routes.draw do
     resources :orders, only: [:index, :new, :create, :edit, :update]
   end
 
+  # General
+  get '/about', to: 'pages#about', as: :about
+  get '/how', to: 'pages#how', as: :how
+
   # Customer
   get '/myprofile', to: 'customers#edit', as: :edit_profile
   patch '/myprofile', to: 'customers#update', as: :update_profile

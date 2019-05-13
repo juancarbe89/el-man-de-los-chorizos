@@ -1,7 +1,11 @@
 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
 }
 
 .cards {
@@ -10,8 +14,28 @@
   grid-gap: 16px;
 }
 
+.card a {
+  text-decoration: none;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 52px;
+  letter-spacing: .02em;
+  line-height: 1em;
+  text-transform: none;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
+  .card a {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: .012307692307692308px;
+}
+  .card {
+  height: 41vh;
+  }
   .cards {
     grid-template-columns: 1fr;
   }
@@ -26,6 +50,9 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .card {
+  height: 80vh;
+  }
   .cards {
     grid-template-columns: 1fr;
   }
