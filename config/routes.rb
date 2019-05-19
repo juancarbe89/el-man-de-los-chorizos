@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :customers
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  # devise_for :customers
-  # get 'pages/home'
   root to: 'pages#home'
 
   resources :customers, only: [:index, :show, :edit, :update] do
