@@ -9,24 +9,34 @@
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-3 links">
-        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-        <p><%= link_to "ABOUT", about_path %></p>
-        <p><%= link_to "HOW IS MADE?", how_path %></p>
-        <p><a href="https://web.whatsapp.com/send?phone=330615590799&text=Hola.%20Necesito%20chorizos%20el%20dia%20">ORDER</a></p>
+        <h6 class="text-uppercase font-weight-bold"><%= t '.title_useful' %></h6>
+        <p><%= link_to(t('.about_link'), about_path) %></p>
+        <p><%= link_to(t('.how_link'), how_path) %></p>
+        <% url = "https://web.whatsapp.com/send?phone=330615590799&text=Hola.%20Necesito%20chorizos%20el%20dia%20" %>
+        <p><%= link_to(t('.order_link'), url, target: "_blank") %></p>
       </div>
       <div class="col-12 col-sm-6 col-md-5 links">
-        <h6 class="text-uppercase font-weight-bold">Contact</h6>
-        <p><i class="fas fa-home mr-3"></i>France, PAR 75000, FR</p>
+        <h6 class="text-uppercase font-weight-bold"><%= t '.title_contact' %></h6>
+        <p><i class="fas fa-home mr-3"></i><%= t '.address' %></p>
         <p><i class="fas fa-envelope mr-3"></i>hi@elmandeloschorizos.com</p>
-        <p><i class="fas fa-phone mr-3"></i>+ 33 0615 590 799</p>
+        <p><i class="fas fa-phone mr-3"></i>+33 0615 590 799</p>
       </div>
       <div class="col-12 col-sm-6 col-md-3 links">
-        <h6 class="text-uppercase font-weight-bold">Follow us</h6>
-        <p><a href="https://www.facebook.com/elmandeloschorizos/" target="_blank" class="s-icon"><i class="fab fa-facebook-f"></i></a></p>
-        <p><a href="https://www.instagram.com/el_man_de_los_chorizos/" target="_blank" class="s-icon"><i class="fab fa-instagram"></i></a></p>
+        <h6 class="text-uppercase font-weight-bold"><%= t '.title_social_media' %></h6>
+        <p>
+          <%= link_to "https://www.facebook.com/elmandeloschorizos/", target: "_blank", class: "s-icon" do %>
+            <i class="fab fa-facebook-f"></i>
+          <% end %>
+        </p>
+        <p>
+          <%= link_to "https://www.instagram.com/el_man_de_los_chorizos/", target: "_blank", class: "s-icon" do %>
+            <i class="fab fa-instagram"></i>
+          <% end %>
+        </p>
       </div>
     </div>
   </div>
-  <div class="footer-copyright text-center">El Man De Los Chorizos© 2019. All rights reserved. created by<a href="https://www.linkedin.com/in/juancarbe" target="_blank"> JuanDev</a>
+  <div class="footer-copyright text-center">
+    <%= t '.copy_right' %><%= link_to "JuanDev", "https://www.linkedin.com/in/juancarbe", target: "_blank" %>
   </div>
 </footer>

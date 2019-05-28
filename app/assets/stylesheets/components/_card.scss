@@ -6,6 +6,7 @@
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  text-decoration: none;
 }
 
 .cards {
@@ -14,8 +15,11 @@
   grid-gap: 16px;
 }
 
-.card a {
+.card-link {
   text-decoration: none;
+  margin-left: 0px !important;
+}
+.card {
   margin-bottom: 0;
   font-weight: 700;
   font-style: normal;
@@ -28,7 +32,7 @@
 }
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
-  .card a {
+  .card {
   font-size: 32px;
   font-weight: 600;
   letter-spacing: .012307692307692308px;

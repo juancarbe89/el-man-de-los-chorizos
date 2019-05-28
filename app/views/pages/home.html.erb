@@ -2,7 +2,7 @@
   <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/juandev/image/upload/v1557239782/choriBanner.jpg)">
     <div class="banner-container">
       <h1><strong>El Man De Los Chorizos</strong></h1>
-      <p>Chorizos artesanales en Paris 🇫🇷</p>
+      <p><%= t '.slogan' %>🇫🇷</p>
       <div class="banner-mouse center-items">
         <a href="#screen-2" class="js-animate-to"><div class="mouse"><span></span></div></a>
       </div>
@@ -12,55 +12,63 @@
 <div class="space-block"></div>
 <div class="home-screen" id="screen-2">
   <div class="container">
-    <h2>WHAT IS EL MAN DE LOS CHORIZOS ABOUT?</h2>
-    <p>Buenas!! my name is Juan and I sell chorizos. It began on February 2018 where I took the desicion to come to Paris to take a risk and look for new oppportunities. My bussines plan is pretty easy: I will sell as much Chorizos as I can, to cover no just the colombian demand also to make sure everyone know the Colombian chorizo around France!<br><br>As I said above, and If you want to support a Colombian entrepreneur I offer to you a package of 5 Chorizos just for 10 Euros (Delivery is free!). But please, don't make me ride too far!</p>
+    <h2><%= t '.title_about' %></h2>
+    <p><%= t '.paragraph1_about' %></p><br>
+    <p><%= t '.paragraph2_about' %></p>
     <div class="space-block"></div>
   </div>
     <div class="cards">
-      <div class="card img-fluid" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/juandev/image/upload/v1557314826/choriDelivery.jpg)">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/juandev/image/upload/v1557314826/choriDelivery.jpg)">
       </div>
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/juandev/image/upload/v1557314985/choriFlag.jpg)">
-        <%= link_to "ABOUT", about_path %>
+      <%= link_to about_path, class: "card-link" do %>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/juandev/image/upload/v1557314985/choriFlag.jpg)">
+          <%= t '.about_link' %>
+        </div>
+      <% end %>
+      <%= link_to how_path, class: "card-link" do %>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/juandev/image/upload/v1557314826/choriEquipment.jpg)">
+          <%= t '.how_link' %>
+        </div>
+      <% end %>
+      <% url = "https://web.whatsapp.com/send?phone=330615590799&text=Hola.%20Necesito%20chorizos%20el%20dia%20" %>
+      <%= link_to url, target: "_blank", class: "card-link" do %>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/juandev/image/upload/v1557315738/choriCleta.jpg)">
+        <%= t '.order_link' %>
       </div>
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/juandev/image/upload/v1557314826/choriEquipment.jpg)">
-        <%= link_to "HOW IS MADE", how_path %>
-      </div>
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/juandev/image/upload/v1557315738/choriCleta.jpg)">
-        <a href="https://web.whatsapp.com/send?phone=330615590799&text=Hola.%20Necesito%20chorizos%20el%20dia%20" >ORDER</a>
-      </div>
+      <% end %>
     </div>
 </div>
 <div class="home-screen" id="screen-4">
   <div class="container">
-    <h2>FAQS</h2>
+    <h2><%= t '.title_faq' %></h2>
     <div id="wrapper">
       <ul>
         <li>
           <input type="checkbox" checked><i></i>
-          <h3>Is the Chorizo gluten free?</h3>
-          <p>This is a short answer for your question.</p>
+          <h3><%= t '.subtitle_faq' %></h3>
+          <p><%= t '.paragraph_faq' %></p>
         </li>
         <li>
           <input type="checkbox" checked><i></i>
-          <h3>Do you have a restaurant?</h3>
-          <p>No at the momment</p>
+          <h3><%= t '.subtitle_faq1' %></h3>
+          <p><%= t '.paragraph_faq1' %></p>
         </li>
         <li>
           <input type="checkbox" checked><i></i>
-          <h3>Do you have franchise?</h3>
-          <p>No at the momment</p>
+          <h3><%= t '.subtitle_faq2' %></h3>
+          <p><%= t '.paragraph_faq2' %></p>
         </li>
         <li>
           <input type="checkbox" checked><i></i>
-          <h3>Do you have job opportunities?</h3>
-          <p>I would love to have job possitions available but there is not. Please feel free to send to us an expression of Interes and we will reach to you as soon as we have a position. Email: hi@elmandeloschorizos.com</p>
+          <h3><%= t '.subtitle_faq3' %></h3>
+          <p><%= t '.paragraph_faq3' %></p>
         </li>
       </ul>
     </div>
   </div>
 </div>
 <div class="home-screen" id="screen-5">
-    <h2>#MamáEstoyTriunfando!</h2>
+    <h2><%= t '.title_news' %></h2>
     <ul class="press-container">
       <a target="_blank" rel="noopener nofollow" href="https://www.rcnradio.com/internacional/el-man-que-deleita-paris-con-su-autentico-chorizo-colombiano?fbclid=IwAR1igMu50yUlXzOa1dfE66nynO9ReAbm7TfUrhiKmqPnPA02fzoo94dTFQg">
         <li class="logo-box">

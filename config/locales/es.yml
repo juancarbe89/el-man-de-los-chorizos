@@ -1,75 +1,44 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
-en:
+es:
   shared:
     navbar:
-      home_link: 'HOME'
+      home_link: 'INICIO'
     footer:
       title_useful: 'USEFUL LINKS'
-      about_link: 'ABOUT'
-      how_link: 'HOW IS MADE?'
-      order_link: 'ORDER'
-      title_contact: 'CONTACT'
-      address: 'France, PAR 75000, FR'
-      title_social_media: 'FOLLOW US'
-      copy_right: 'El Man De Los Chorizos© 2019. All rights reserved. created by '
+      about_link: 'SOBRE'
+      how_link: 'COMO LO HACEMOS?'
+      order_link: 'ORDENAR'
+      title_contact: 'CONTACTO'
+      address: 'Francia, PAR 75000, FR'
+      title_social_media: 'SIGUENOS'
+      copy_right: 'El Man De Los Chorizos© 2019. Todos los derechos reservados. creado por '
   pages:
     home:
-      slogan: 'Home made chorizos in Paris '
-      title_about: 'WHAT IS EL MAN DE LOS CHORIZOS ABOUT?'
+      slogan: 'Chorizos artesanales en Paris '
+      title_about: 'QUE ES EL MAN DE LOS CHORIZOS?'
       paragraph1_about: "Buenas!! my name is Juan and I sell chorizos. It began on February 2018 where I took the desicion to come to Paris to take a risk and look for new oppportunities. My bussines plan is pretty easy: I will sell as much Chorizos as I can, to cover no just the colombian demand also to make sure everyone know the Colombian chorizo around France!"
       paragraph2_about: "As I said above, and If you want to support a Colombian entrepreneur I offer to you a package of 5 Chorizos just for 10 Euros (Delivery is free!). But please, don't make me ride too far!"
-      about_link: "ABOUT"
-      how_link: 'HOW IS MADE?'
-      order_link: 'ORDER'
+      about_link: "SOBRE"
+      how_link: 'COMO LO HACEMOS?'
+      order_link: 'ORDENAR'
       title_faq: 'FAQS'
-      subtitle_faq: 'Is the Chorizo gluten free?'
-      subtitle_faq1: 'Do you have a restaurant?'
-      subtitle_faq2: 'Do you have franchise?'
-      subtitle_faq3: 'Do you have job opportunities?'
-      paragraph_faq: 'This is a short answer for your question.'
-      paragraph_faq1: 'No at the momment'
-      paragraph_faq2: 'No at the momment'
-      paragraph_faq3: 'I would love to have job possitions available but there is not. Please feel free to send to us an expression of Interes and we will reach to you as soon as we have a position. Email: hi@elmandeloschorizos.com'
+      subtitle_faq: 'El chorizo contiene gluten?'
+      subtitle_faq1: 'Dónde está ubicado el restaurante?'
+      subtitle_faq2: 'Tienen oportunidades de franquicia?'
+      subtitle_faq3: 'hay ofertas de trabajo disponibles?'
+      paragraph_faq: 'Esta es una respuesta corta a su pregunta.'
+      paragraph_faq1: 'No en el momento.'
+      paragraph_faq2: 'No en el momento.'
+      paragraph_faq3: 'Me encantaría tener posiciones disponibles pero po el momento no hay. Por favor sientase libre en enviar su hoja de vida y lo contactaremos tna pronto tengamos una posición de trabajo disponible. Correo: hi@elmandeloschorizos.com'
       title_news: '#MamáEstoyTriunfando!'
     about:
-      title: 'HOW IT BEGAN'
-      subtitle: 'A TRUE CHORIZO LOVE BEYOND BORDERS'
+      title: 'NUESTROS INICIOS'
+      subtitle: 'EL AMOR POR LOS CHORIZOS MAS ALLÁ DE LAS FRONTERAS'
       paragraph1: "A los inicios del 2018, Juan viajo a Paris en busca de una experiencia diferente en un pais donde siempre quizo estar. Se aventuro a lanzar su negocio en donde el objetivo final es vender muchos chorizos para no solo cubrir la oferta de colombianos, sino hacer conocer el chorizo colombiano por toda Francia!"
       paragraph2: "Desde Clignancourt hasta Petit Montrouge, Auteuil hasta Charonne, Juan se ha dedicado a dar a conocer su emprendimiento, alimentando los deseos de los vecinos por un exquisito chorizo sin importar de donde son o estrato, siempre sus chorizos tienen el mejor feedback."
       paragraph3: "Ahora que su emprendiemiento salio en los medios, El man de los chorizos esta apuntando a cumplir su meta planeada desde el puro principio de su idea de negocio."
     how:
-      title: 'GREAT PROCESS'
-      subtitle: 'QUALITY STAND FIRST FOR GREAT CHORIZOS!'
+      title: 'PASIÓN POR LO QUE HACEMOS'
+      subtitle: 'PARA UN GRAN CHORIZO, LA CALIDAD ES LO PRIMERO!'
       paragraph1: "A los inicios del 2018, Juan viajo a Paris en busca de una experiencia diferente en un pais donde siempre quizo estar. Se aventuro a lanzar su negocio en donde el objetivo final es vender muchos chorizos para no solo cubrir la oferta de colombianos, sino hacer conocer el chorizo colombiano por toda Francia!"
       paragraph2: "Desde Clignancourt hasta Petit Montrouge, Auteuil hasta Charonne, Juan se ha dedicado a dar a conocer su emprendimiento, alimentando los deseos de los vecinos por un exquisito chorizo sin importar de donde son o estrato, siempre sus chorizos tienen el mejor feedback."
       paragraph3: "Ahora que su emprendiemiento salio en los medios, El man de los chorizos esta apuntando a cumplir su meta planeada desde el puro principio de su idea de negocio."
