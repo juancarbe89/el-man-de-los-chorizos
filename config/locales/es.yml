@@ -3,10 +3,10 @@ es:
     navbar:
       home_link: 'INICIO'
     footer:
-      title_useful: 'USEFUL LINKS'
-      about_link: 'SOBRE'
-      how_link: 'COMO LO HACEMOS?'
-      order_link: 'ORDENAR'
+      title_useful: 'LINKS'
+      about_link: 'NOSOTROS'
+      how_link: 'CÓMO LO HACEMOS?'
+      order_link: 'HAZ TU PEDIDO'
       title_contact: 'CONTACTO'
       address: 'Francia, PAR 75000, FR'
       title_social_media: 'SIGUENOS'
@@ -17,14 +17,14 @@ es:
       title_about: 'QUE ES EL MAN DE LOS CHORIZOS?'
       paragraph1_about: "Buenas!! my name is Juan and I sell chorizos. It began on February 2018 where I took the desicion to come to Paris to take a risk and look for new oppportunities. My bussines plan is pretty easy: I will sell as much Chorizos as I can, to cover no just the colombian demand also to make sure everyone know the Colombian chorizo around France!"
       paragraph2_about: "As I said above, and If you want to support a Colombian entrepreneur I offer to you a package of 5 Chorizos just for 10 Euros (Delivery is free!). But please, don't make me ride too far!"
-      about_link: "SOBRE"
-      how_link: 'COMO LO HACEMOS?'
-      order_link: 'ORDENAR'
+      about_link: "NOSOTROS"
+      how_link: 'CÓMO LO HACEMOS?'
+      order_link: 'HAZ TU PEDIDO'
       title_faq: 'FAQS'
       subtitle_faq: 'El chorizo contiene gluten?'
-      subtitle_faq1: 'Dónde está ubicado el restaurante?'
+      subtitle_faq1: 'Ubicación del restaurante?'
       subtitle_faq2: 'Tienen oportunidades de franquicia?'
-      subtitle_faq3: 'hay ofertas de trabajo disponibles?'
+      subtitle_faq3: 'Hay ofertas de trabajo disponibles?'
       paragraph_faq: 'Esta es una respuesta corta a su pregunta.'
       paragraph_faq1: 'No en el momento.'
       paragraph_faq2: 'No en el momento.'
@@ -35,7 +35,7 @@ es:
       subtitle: 'EL AMOR POR LOS CHORIZOS MAS ALLÁ DE LAS FRONTERAS'
       paragraph1: "A los inicios del 2018, Juan viajo a Paris en busca de una experiencia diferente en un pais donde siempre quizo estar. Se aventuro a lanzar su negocio en donde el objetivo final es vender muchos chorizos para no solo cubrir la oferta de colombianos, sino hacer conocer el chorizo colombiano por toda Francia!"
       paragraph2: "Desde Clignancourt hasta Petit Montrouge, Auteuil hasta Charonne, Juan se ha dedicado a dar a conocer su emprendimiento, alimentando los deseos de los vecinos por un exquisito chorizo sin importar de donde son o estrato, siempre sus chorizos tienen el mejor feedback."
-      paragraph3: "Ahora que su emprendiemiento salio en los medios, El man de los chorizos esta apuntando a cumplir su meta planeada desde el puro principio de su idea de negocio."
+      paragraph3: "Ahora que su emprendimiento salio en los medios, El man de los chorizos esta apuntando a cumplir su meta planeada desde el puro principio de su idea de negocio."
     how:
       title: 'PASIÓN POR LO QUE HACEMOS'
       subtitle: 'PARA UN GRAN CHORIZO, LA CALIDAD ES LO PRIMERO!'
