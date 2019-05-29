@@ -1,7 +1,11 @@
 es:
   shared:
     navbar:
+      language: 'IDIOMA'
       home_link: 'INICIO'
+      about_link: 'NOSOTROS'
+      how_link: 'CÓMO LO HACEMOS?'
+      order_link: 'HAZ TU PEDIDO'
     footer:
       title_useful: 'LINKS'
       about_link: 'NOSOTROS'

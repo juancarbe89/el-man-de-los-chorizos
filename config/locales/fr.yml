@@ -1,7 +1,11 @@
 fr:
   shared:
     navbar:
+      language: 'lANGUE'
       home_link: 'INICIO'
+      about_link: 'NOSOTROS'
+      how_link: 'CÓMO LO HACEMOS?'
+      order_link: 'HAZ TU PEDIDO'
     footer:
       title_useful: 'USEFUL LINKS'
       about_link: 'SOBRE'
@@ -9,7 +13,7 @@ fr:
       order_link: 'ORDENAR'
       title_contact: 'CONTACTO'
       address: 'Francia, PAR 75000, FR'
-      title_social_media: 'SIGUENOS'
+      title_social_media: 'SUIVEZ NOUS SUR'
       copy_right: 'El Man De Los Chorizos© 2019. Todos los derechos reservados. creado por '
   pages:
     home:

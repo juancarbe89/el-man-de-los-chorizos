@@ -32,7 +32,11 @@
 en:
   shared:
     navbar:
+      language: 'LANGUAGE'
       home_link: 'HOME'
+      about_link: 'ABOUT'
+      how_link: 'HOW IS MADE?'
+      order_link: 'ORDER'
     footer:
       title_useful: 'USEFUL LINKS'
       about_link: 'ABOUT'

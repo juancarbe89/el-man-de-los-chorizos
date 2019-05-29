@@ -7,38 +7,36 @@
     <= link_to_unless_current "🇨🇴 Español", locale: "es", class: "dropdown-item" ><br>
     <= link_to_unless_current "🇫🇷 Français", locale: "fr", class: "dropdown-item" >
   </p> -->
-
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-us"> </span>🌐 Languages</a>
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-us"> </span>🌐 <%= t('.language') %></a>
         <div class="dropdown-menu" aria-labelledby="dropdown09">
           <a class="dropdown-item" href="/en"><span class="flag-icon flag-icon-fr"> </span>🇬🇧 English</a>
           <a class="dropdown-item" href="/es"><span class="flag-icon flag-icon-fr"> </span>🇨🇴 Español</a>
           <a class="dropdown-item" href="/fr"><span class="flag-icon flag-icon-it"> </span>🇫🇷 Français</a>
         </div>
       </li>
-
-      <li class="nav-link <%= active?('/') %>"><%= link_to "HOME", root_path %></li>
-      <li class="nav-link <%= active?('/about') %>"><%= link_to "ABOUT", about_path %></li>
-      <li class="nav-link <%= active?('/how') %>"><%= link_to "HOW IS MADE?", how_path %></li>
-      <% if customer_signed_in? %>
-        <li class="<%= active?('/order') %>"><%= link_to "ORDER", "#", class: "nav-link" %></li>
-        <li class="nav-item dropdown">
-          <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Profile", "#", class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_customer_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
-        </li>
+      <li class="nav-link <%= active?("/#{I18n.locale.to_s}") %>">
+        <%= link_to(t('.home_link'), root_path) %>
+      </li>
+      <li class="nav-link <%= active?("/#{I18n.locale.to_s}/about") %>">
+        <%= link_to(t('.about_link'), about_path) %>
+      </li>
+      <li class="nav-link <%= active?("/#{I18n.locale.to_s}/how") %>">
+        <%= link_to(t('.how_link'), how_path) %>
+      </li>
+      <% if mobile_device == "mobile" %>
+          <% url = "https://wa.me/33615590799?text=Hola.%20Necesito%20chorizos%20el%20dia%20" %>
         <% else %>
-          <li class="<%= active?('/order') %>"><a href="https://web.whatsapp.com/send?phone=33615590799&text=Hola.%20Necesito%20#%20chorizos%20el%20dia%20" target="_blank" class="nav-link">ORDER <i class="fab fa-whatsapp"></i></a></li>
-      <% end %>
+          <% url = "https://web.whatsapp.com/send?phone=33615590799&text=Hola.%20Necesito%20chorizos%20el%20dia%20" %>
+        <% end %>
+      <li class="nav-link <%= active?("/#{I18n.locale.to_s}/order") %>">
+        <%= link_to(t('.order_link'), url, target: "_blank") %>
+      </li>
     </ul>
   </div>
 </div>
