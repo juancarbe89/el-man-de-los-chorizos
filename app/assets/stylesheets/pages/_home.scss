@@ -76,14 +76,13 @@
 }
 
 ul.press-container {
-  display: -ms-flexbox;
+  overflow-x: auto;
   display: flex;
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   margin: 20px 0px;
   width: 100%;
   a {
