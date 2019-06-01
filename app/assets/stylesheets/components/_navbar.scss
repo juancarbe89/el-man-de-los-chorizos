@@ -15,6 +15,13 @@
 .nav-link{
   margin: 0px 18px;
 }
-.active {
-  color: rgba(58, 121, 70, 0.9) !important;
+.nav-link > a {
+  color: rgba(0,0,0,0.5);
+}
+.nav-link > a:hover {
+  color: rgba(0,0,0,0.8);
+  text-decoration: none;
+}
+.nav-link.active> a {
+  color: rgba(0,0,0,0.8);
 }

@@ -13,11 +13,17 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-us"> </span>🌐 <%= t('.language') %></a>
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🌐 <%= t('.language') %></a>
         <div class="dropdown-menu" aria-labelledby="dropdown09">
-          <a class="dropdown-item" href="/en"><span class="flag-icon flag-icon-fr"> </span>🇬🇧 English</a>
-          <a class="dropdown-item" href="/es"><span class="flag-icon flag-icon-fr"> </span>🇨🇴 Español</a>
-          <a class="dropdown-item" href="/fr"><span class="flag-icon flag-icon-it"> </span>🇫🇷 Français</a>
+          <%= link_to_unless_current "🇬🇧 English", {locale: "en"}, {class: "dropdown-item"} do %>
+            <!-- <span class="flag-icon flag-icon-gb"> </span> -->
+          <% end %>
+          <%= link_to_unless_current "🇨🇴 Español", {locale: "es"}, {class: "dropdown-item"} do %>
+            <!-- <span class="flag-icon flag-icon-co"> </span> -->
+          <% end %>
+          <%= link_to_unless_current "🇫🇷 Français", {locale: "fr"}, {class: "dropdown-item"} do %>
+            <!-- <span class="flag-icon flag-icon-fr"> </span> -->
+          <% end %>
         </div>
       </li>
       <li class="nav-link <%= active?("/#{I18n.locale.to_s}") %>">
